@@ -12,7 +12,7 @@ type Todo = {
 
 const STORAGE_KEY = 'todos_v1';
 
-export default function Page(): JSX.Element {
+export default function Page(): React.JSX.Element {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<'todos' | 'completed'>('todos');
